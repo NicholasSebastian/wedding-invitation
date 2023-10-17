@@ -1,10 +1,11 @@
 import Image from "next/image";
 import type { FC, PropsWithChildren } from "react";
+import type { StaticImageData } from "next/image";
 
 type PortraitProps = {
   name: string
   instagram: string
-  src: string
+  src: StaticImageData
   alt: string
 }
 
@@ -19,7 +20,9 @@ const Portrait: FC<PropsWithChildren<PortraitProps>> = props => {
       <Image fill
         className="object-cover"
         src={src}
-        alt={alt} />
+        alt={alt}
+        placeholder="blur"
+        sizes="(max-width: 640px) 100vw, 50vw" />
       <div className="absolute inset-3 border border-white" />
       <Image 
         src="/crenulations.svg" 

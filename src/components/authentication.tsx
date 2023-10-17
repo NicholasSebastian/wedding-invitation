@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import config from "@/app/config.json";
 import useRecipient from './recipient';
+import background from "../assets/landscape2.jpg";
 import type { FC, PropsWithChildren } from "react";
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
@@ -12,9 +14,13 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
 
   if (authenticated) return children;
   return (
-    <main 
-      className="flex flex-col justify-center items-center h-screen bg-center"
-      style={{ backgroundImage: "url('/landscape2.jpg')", backgroundPositionX: '40%' }}>
+    <main className="flex flex-col justify-center items-center h-screen relative">
+      <Image fill
+        src={background}
+        alt="Background"
+        placeholder="blur"
+        className="object-cover"
+        style={{ backgroundPositionX: '40%', zIndex: -1 }} />
       <h1 className="font-serif text-5xl sm:text-6xl text-center">
         {config.couple.fiance.name} & {config.couple.fiancee.name}
       </h1>

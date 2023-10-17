@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "next": "latest",
     "pg": "^8.11.3",
     "react": "^18.2.0",

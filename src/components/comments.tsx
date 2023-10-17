@@ -9,12 +9,13 @@ type Comment = {
 }
 
 const Comments: FC = () => {
-  const { data } = useSWR("comments", async () => {
+  const { data, error } = useSWR("comments", async () => {
     const response = await fetch("/comments", { method: "GET" });
     const data = await response.json();
-    return data.payload as Array<Comment>;
+    return data.payload.reverse() as Array<Comment>;
   });
 
+  if (error) return <div>Oh no. An error occured...</div>;
   return (
     <div className="text-center h-full p-2 overflow-scroll">
       {data?.map(comment => (

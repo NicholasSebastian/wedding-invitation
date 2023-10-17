@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { mutate } from "swr";
+import { RiSendPlaneFill } from "@react-icons/all-files/ri/RiSendPlaneFill";
 import type { FC } from "react";
 
 const CommentsForm: FC = () => {
@@ -36,7 +37,8 @@ const CommentsForm: FC = () => {
             setComments("");
             setSent(true);
           }}>
-          Send Your Wishes
+          <RiSendPlaneFill className="inline mr-1" style={{ marginTop: -1 }} />
+          <span>Send Your Wishes</span>
         </button>
       )}
     </div>

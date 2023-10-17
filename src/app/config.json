@@ -27,9 +27,13 @@
     "date": "December 10th, 2023",
     "shortdate": "10.12.23",
     "time": "18:00",
-    "epoch": 1702206000000
+    "epoch": 1702206000000,
+    "dresscode": "Formal"
   },
-  "bank": "BCA 4070896333 - Nicola Olivia Bahary",
+  "bank": {
+    "text": "BCA 4070896333 - Nicola Olivia Bahary",
+    "number": 4070896333
+  },
   "quote": "Who lives in a pineapple under the sea?",
   "passcode": "LVNC2023",
   "credits": {
