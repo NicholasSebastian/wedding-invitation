@@ -11,7 +11,7 @@ const metadata: Metadata = {
   openGraph: {
     title: "The Wedding of Levin and Nicola",
     description: 'It is our pleasure to invite you to share the joy when we exchange marriage vows and begin our new life together...',
-    images: ['/landscape3.jpg']
+    images: ['/og-image.jpg']
   }
 }
 
