@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Title from '@/components/title';
 import Countdown from '@/components/countdown';
 import Portrait from '@/components/portrait';
+import VideoPlayer from '@/components/video';
 import CommentsForm from '@/components/comments-form';
 import Comments from '@/components/comments';
 import Donations from '@/components/donations';
@@ -81,9 +82,7 @@ const section4 = (
     <div className="text-black text-sm mb-5">
       <q>{config.quote}</q>
     </div>
-    <video controls autoPlay muted loop playsInline className="w-11/12 sm:w-9/12 md:w-7/12 lg:w-6/12">
-      <source src='/video.mp4' type='video/mp4' />
-    </video>
+    <VideoPlayer />
   </section>
 );
 

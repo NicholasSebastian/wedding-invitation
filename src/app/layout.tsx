@@ -1,4 +1,5 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import AuthProvider from '@/components/authentication';
 import MusicProvider from '@/components/music';
 import type { Metadata } from 'next';
@@ -23,6 +24,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
             {children}
           </MusicProvider>
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );

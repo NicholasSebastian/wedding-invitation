@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { mutate } from "swr";
+import { track } from '@vercel/analytics';
 import { RiSendPlaneFill } from "@react-icons/all-files/ri/RiSendPlaneFill";
 import type { FC } from "react";
 
@@ -31,6 +32,7 @@ const CommentsForm: FC = () => {
             // Add to the database and revalidate the local cache.
             await fetch("/comments", { method: "POST", body: JSON.stringify({ name, comments }) });
             mutate("comments");
+            track("Post Comment");
 
             // Empty the form.
             setName("");
