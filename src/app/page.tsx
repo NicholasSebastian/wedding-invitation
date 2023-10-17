@@ -121,9 +121,9 @@ const section6 = (
         </div>
         <ul className="text-sm">
           <li>{config.wedding.address}</li>
-          <li><b className="text-red-500">Dress Code:</b> {config.wedding.dresscode}</li>
           <li><b className="text-red-500">Date:</b> {config.wedding.date}</li>
           <li><b className="text-red-500">Time:</b> {config.wedding.time}</li>
+          <li><b className="text-red-500">Dress Code:</b> {config.wedding.dresscode}</li>
         </ul>
       </div>
     </div>
@@ -175,7 +175,7 @@ const section10 = (
       sizes='100vw' />
     <div 
       className="flex flex-col items-center justify-center absolute inset-0"
-      style={{ backdropFilter: "brightness(0.6) grayscale(0.2)" }}>
+      style={{ backdropFilter: "brightness(0.45) grayscale(0.2)" }}>
       <div>Kindly tag our instagram on our wedding day:</div>
       <a href={config.hashtag.url} className="underline">
         {config.hashtag.text}

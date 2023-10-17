@@ -7,10 +7,10 @@ import type { FC, PropsWithChildren } from 'react';
 
 const metadata: Metadata = {
   title: 'Levin and Nicola',
-  description: 'Nicola the Levantine Bride and Levin the Fitting Prince. Let their love story on the Eastern shore of the Mediterranian Sea begin.',
+  description: 'Levin and Nicola invites you to share the joy when they exchange marriage vows and begin their new life together...',
   openGraph: {
-    title: "Levin and Nicola's Wedding",
-    description: 'You are invited to the greatest wedding ceremony in the history of mankind.',
+    title: "The Wedding of Levin and Nicola",
+    description: 'It is our pleasure to invite you to share the joy when we exchange marriage vows and begin our new life together...',
     images: ['/landscape3.jpg']
   }
 }
