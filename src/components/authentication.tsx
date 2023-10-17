@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { track } from '@vercel/analytics';
 import { BsEnvelopeOpenFill } from "@react-icons/all-files/bs/BsEnvelopeOpenFill";
 import config from "@/app/config.json";
 import useRecipient from './recipient';
@@ -45,8 +46,10 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
       <button
         className="mt-4 bg-white text-black text-sm rounded font-semibold uppercase px-6 py-2 hover:bg-gray-100"
         onClick={() => {
-          if (config.passcode === password) 
+          if (config.passcode === password) {
             setAuthenticated(true);
+            track("Open Invitation");
+          }
           else
             setInvalid(true);
         }}>
