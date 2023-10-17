@@ -11,6 +11,11 @@ import crenulations from '@/components/crenulations';
 import config from "./config.json";
 import type { FC } from 'react';
 
+import { RiLinkedinBoxFill } from "@react-icons/all-files/ri/RiLinkedinBoxFill";
+import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill";
+import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
+import { RiWhatsappFill } from "@react-icons/all-files/ri/RiWhatsappFill";
+
 import background1 from "../assets/landscape1.jpg";
 import background2 from "../assets/landscape2.jpg";
 import background3 from "../assets/landscape3.jpg";
@@ -29,7 +34,10 @@ const section1 = (
       sizes='100vw' />
     <div 
       className="flex flex-col items-center justify-center absolute inset-0 z-10"
-      style={{ backdropFilter: "brightness(0.7) grayscale(0.2)" }}>
+      style={{ 
+        backdropFilter: "brightness(0.7) grayscale(0.2)",
+        WebkitBackdropFilter: "brightness(0.7) grayscale(0.2)" 
+      }}>
       <div className="font-serif text-xl absolute top-1">
         {config.wedding.shortdate}
       </div>
@@ -96,7 +104,10 @@ const section5 = (
       sizes='100vw' />
     <div 
       className="flex flex-col items-center justify-center absolute inset-0 z-10"
-      style={{ backdropFilter: "brightness(0.7) grayscale(0.2)" }}>
+      style={{ 
+        backdropFilter: "brightness(0.7) grayscale(0.2)",
+        WebkitBackdropFilter: "brightness(0.7) grayscale(0.2)" 
+      }}>
       <div className="text-sm tracking-wider uppercase">Come join us to</div>
       <div className="text-4xl font-dance">Celebrate Our Love</div>
     </div>
@@ -140,7 +151,10 @@ const section7 = (
       sizes='100vw' />
     <div 
       className="flex flex-col items-center justify-center absolute inset-0"
-      style={{ backdropFilter: "brightness(0.7) grayscale(0.2)" }}>
+      style={{ 
+        backdropFilter: "brightness(0.7) grayscale(0.2)",
+        WebkitBackdropFilter: "brightness(0.7) grayscale(0.2)" 
+      }}>
       <div className="font-dance text-4xl text-center">Send Your Wishes</div>
       <hr className="w-16 bg-black my-6 mx-auto" />
       <CommentsForm />
@@ -175,7 +189,10 @@ const section10 = (
       sizes='100vw' />
     <div 
       className="flex flex-col items-center justify-center absolute inset-0"
-      style={{ backdropFilter: "brightness(0.45) grayscale(0.2)" }}>
+      style={{ 
+        backdropFilter: "brightness(0.6) grayscale(0.2)", 
+        WebkitBackdropFilter: "brightness(0.6) grayscale(0.2)" 
+      }}>
       <div>Kindly tag our instagram on our wedding day:</div>
       <a href={config.hashtag.url} className="underline">
         {config.hashtag.text}
@@ -194,11 +211,23 @@ const section11 = (
 );
 
 const footer = (
-  <footer className="flex flex-col items-center py-6">
-    <a href={config.credits.link} rel="nofollow" className="text-center text-xs">
-      <div>Made by {config.credits.name}</div>
-      <div>{config.credits.description}</div>
-    </a>
+  <footer className="flex flex-col items-center py-6 text-center text-xs">
+    <div className="flex justify-between text-2xl sm:text-xl mb-2 w-32">
+      <a href={config.credits.linkedin}>
+        <RiLinkedinBoxFill />
+      </a>
+      <a href={config.credits.instagram}>
+        <RiInstagramFill />
+      </a>
+      <a href={config.credits.discord}>
+        <RiDiscordFill />
+      </a>
+      <a href={config.credits.whatsapp}>
+        <RiWhatsappFill />
+      </a>
+    </div>
+    <div>Made by {config.credits.name}</div>
+    <div>{config.credits.description}</div>
   </footer>
 );
 

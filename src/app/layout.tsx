@@ -9,7 +9,7 @@ const metadata: Metadata = {
   title: 'Levin and Nicola',
   description: 'Levin and Nicola invites you to share the joy when they exchange marriage vows and begin their new life together...',
   openGraph: {
-    title: "The Wedding of Levin and Nicola",
+    title: 'The Wedding of Levin and Nicola',
     description: 'It is our pleasure to invite you to share the joy when we exchange marriage vows and begin our new life together...',
     images: ['/og-image.jpg']
   }

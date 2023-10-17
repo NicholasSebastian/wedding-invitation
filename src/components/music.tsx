@@ -13,7 +13,7 @@ const MusicProvider: FC<PropsWithChildren> = ({ children }) => {
       <button 
         onClick={() => setPlaying(!isPlaying)}
         className="fixed top-4 left-4 z-20 border-2 border-white rounded-full w-10 h-10 flex justify-center items-center focus:outline-none">
-        {isPlaying ? <FaPause /> : <FaPlay />}
+        {isPlaying ? <FaPause /> : <FaPlay style={{ marginRight: -2.5 }} />}
       </button>
       {children}
     </Fragment>
