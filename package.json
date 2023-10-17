@@ -1,0 +1,32 @@
+{
+  "name": "wedding-invitation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-howler": "^5.2.0",
+    "swr": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/pg": "^8.10.5",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-howler": "^5.2.1",
+    "autoprefixer": "^10.4.4",
+    "eslint": "^7.24.0",
+    "eslint-config-next": "latest",
+    "postcss": "^8.4.12",
+    "tailwindcss": "2.1.4",
+    "typescript": "^5.1.6"
+  }
+}

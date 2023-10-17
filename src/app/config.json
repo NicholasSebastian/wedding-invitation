@@ -1,0 +1,40 @@
+{
+  "couple": {
+    "fiance": {
+      "name": "Levin",
+      "surname": "Febrianto",
+      "title": "Third Son",
+      "father": "Adnan",
+      "mother": "Susanti",
+      "instagram": "https://instagram.com/levinfebrianto"
+    },
+    "fiancee": {
+      "name": "Nicola",
+      "surname": "Olivia Bahary",
+      "title": "First Daughter",
+      "father": "Hendra Bahary",
+      "mother": "Lie Inge",
+      "instagram": "https://instagram.com/nicolaoliviaa"
+    }
+  },
+  "hashtag": {
+    "text": "#foLEVerandOLways",
+    "url": "https://www.instagram.com/explore/tags/foLEVerandOLways/"
+  },
+  "wedding": {
+    "location": "Hotel Raffles Jakarta",
+    "address": "Ciputra World, Jl. Prof. DR. Satrio No.Kavling 3",
+    "date": "December 10th, 2023",
+    "shortdate": "10.12.23",
+    "time": "18:00",
+    "epoch": 1702206000000
+  },
+  "bank": "",
+  "quote": "Who lives in a pineapple under the sea?",
+  "passcode": "LVNC2023",
+  "credits": {
+    "name": "Nicholas Oliver Bahary",
+    "description": "Feel free to DM me because I need friends",
+    "link": "https://instagram.com/nicholashendrata"
+  }
+}
