@@ -19,6 +19,7 @@ const Portrait: FC<PropsWithChildren<PortraitProps>> = props => {
       style={{ aspectRatio: 1 }}>
       <Image fill
         className="object-cover"
+        style={{ objectPosition: "50% 35%" }}
         src={src}
         alt={alt}
         placeholder="blur"

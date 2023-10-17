@@ -79,7 +79,7 @@ const section4 = (
   <section className="bg-gray-100 flex flex-col items-center py-12 relative">
     {crenulations}
     <Title prefix="Watch a sneakpeek of" title="Our Love Story" />
-    <div className="text-black text-sm mb-5">
+    <div className="text-black text-center text-sm mb-5 px-8">
       <q>{config.quote}</q>
     </div>
     <VideoPlayer />

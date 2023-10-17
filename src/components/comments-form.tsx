@@ -3,10 +3,12 @@ import { useState } from "react";
 import { mutate } from "swr";
 import { track } from '@vercel/analytics';
 import { RiSendPlaneFill } from "@react-icons/all-files/ri/RiSendPlaneFill";
+import useRecipient from './recipient';
 import type { FC } from "react";
 
 const CommentsForm: FC = () => {
-  const [name, setName] = useState("");
+  const recipient = useRecipient();
+  const [name, setName] = useState(recipient);
   const [comments, setComments] = useState("");
   const [sent, setSent] = useState(false);
 
