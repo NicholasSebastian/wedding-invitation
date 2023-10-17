@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { BsEnvelopeOpenFill } from "@react-icons/all-files/bs/BsEnvelopeOpenFill";
 import config from "@/app/config.json";
 import useRecipient from './recipient';
 import background from "../assets/landscape2.jpg";
@@ -20,10 +21,10 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
         alt="Background"
         placeholder="blur"
         className="object-cover"
-        style={{ backgroundPositionX: '40%', zIndex: -1 }} />
-      <h1 className="font-serif text-5xl sm:text-6xl text-center">
+        style={{ objectPosition: '40% 50%', zIndex: -1 }} />
+      <div className="font-dance text-5xl sm:text-6xl text-center">
         {config.couple.fiance.name} & {config.couple.fiancee.name}
-      </h1>
+      </div>
       <div className="font-medium mt-6">
         - Delivered to -
       </div>
@@ -42,14 +43,15 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
         </div>
       )}
       <button
-        className="mt-4 bg-white text-black rounded font-semibold uppercase px-6 py-2 hover:bg-gray-100"
+        className="mt-4 bg-white text-black text-sm rounded font-semibold uppercase px-6 py-2 hover:bg-gray-100"
         onClick={() => {
           if (config.passcode === password) 
             setAuthenticated(true);
           else
             setInvalid(true);
         }}>
-        Open Invitation
+        <BsEnvelopeOpenFill className="inline mr-2" style={{ marginTop: -4 }} />
+        <span>Open Invitation</span>
       </button>
     </main>
   );
