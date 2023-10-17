@@ -4,6 +4,7 @@ import Countdown from '@/components/countdown';
 import Portrait from '@/components/portrait';
 import CommentsForm from '@/components/comments-form';
 import Comments from '@/components/comments';
+import Donations from '@/components/donations';
 import Gallery from '@/components/gallery';
 import config from "./config.json";
 import type { FC } from 'react';
@@ -124,7 +125,10 @@ const Home: FC = () => {
           <Comments />
         </div>
       </section>
-      {/* TODO: Donation */}
+      <section className="bg-gray-200 py-12">
+        <Title prefix="Feeling extra generous?" title="Wedding Gift" />
+        <Donations />
+      </section>
       <section 
         className="bg-center bg-cover relative h-56"
         style={{ backgroundImage: "url(/landscape3.jpg)" }}>
@@ -144,7 +148,7 @@ const Home: FC = () => {
         <Gallery />
       </section>
       <footer className="flex flex-col items-center py-6">
-        <a href={config.credits.link} className="text-center text-xs">
+        <a href={config.credits.link} rel="nofollow" className="text-center text-xs">
           <div>Made by {config.credits.name}</div>
           <div>{config.credits.description}</div>
         </a>
