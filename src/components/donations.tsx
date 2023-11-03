@@ -11,7 +11,7 @@ const Donations: FC = () => {
   return (
     <Fragment>
       <button 
-        className="block mx-auto bg-red-500 py-2 px-3 text-sm rounded"
+        className="block mx-auto bg-olive py-2 px-3 text-sm rounded"
         onClick={() => {
           setOpen(true);
           track("View Rekening");
@@ -23,7 +23,7 @@ const Donations: FC = () => {
         <div className="text-center mt-4">
           <div className="text-gray-700">{config.bank.text}</div>
           <button 
-            className="text-red-500 focus:outline-none focus:underline"
+            className="text-olive focus:outline-none focus:underline"
             onClick={() => {
               navigator.clipboard.writeText(config.bank.number.toString());
               track("Copy Rekening");

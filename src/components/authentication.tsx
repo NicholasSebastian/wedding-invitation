@@ -5,7 +5,8 @@ import { track } from '@vercel/analytics';
 import { BsEnvelopeOpenFill } from "@react-icons/all-files/bs/BsEnvelopeOpenFill";
 import config from "@/app/config.json";
 import useRecipient from './recipient';
-import background from "../assets/landscape2.jpg";
+import background from "../assets/landscape5.jpg";
+import frame from "../assets/frame.png";
 import type { FC, PropsWithChildren } from "react";
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
@@ -22,7 +23,12 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
         alt="Background"
         placeholder="blur"
         className="object-cover"
-        style={{ objectPosition: '40% 50%', zIndex: -1 }} />
+        style={{ objectPosition: '40% 50%', zIndex: -20 }} />
+      <Image fill
+        src={frame}
+        alt="Frame"
+        placeholder="empty"
+        style={{ zIndex: -10 }} />
       <div className="font-dance text-5xl sm:text-6xl text-center">
         {config.couple.fiance.name} & {config.couple.fiancee.name}
       </div>

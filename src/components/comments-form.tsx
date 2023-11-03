@@ -29,7 +29,7 @@ const CommentsForm: FC = () => {
       ) : (
         <button 
           disabled={sent}
-          className="bg-red-500 block mt-4 mx-auto py-2 px-3 text-sm rounded"
+          className="bg-olive block mt-4 mx-auto py-2 px-3 text-sm rounded"
           onClick={async () => {
             // Add to the database and revalidate the local cache.
             await fetch("/comments", { method: "POST", body: JSON.stringify({ name, comments }) });

@@ -23,6 +23,7 @@ import background4 from "../assets/landscape4.jpg";
 import groom from "../assets/fiance.jpg";
 import bride from "../assets/fiancee.jpg";
 import venue from "../assets/venue.jpg"
+import pillar from "../assets/column.png";
 
 const section1 = (
   <section className="relative h-screen">
@@ -49,13 +50,13 @@ const section1 = (
           {config.couple.fiance.name} & {config.couple.fiancee.name}
         </h1>
       </div>
-      <div className="absolute bottom-8">▼</div>
+      <div className="absolute bottom-14 text-4xl">▼</div>
     </div>
   </section>
 );
 
 const section2 = (
-  <section className="bg-gray-100 flex flex-col justify-center items-center h-80 relative">
+  <section className="bg-cream flex flex-col justify-center items-center h-80 relative">
     {crenulations}
     <Title prefix="10 December 2023" title="We Are Getting Married" />
     <Countdown />
@@ -84,13 +85,22 @@ const section3 = (
 );
 
 const section4 = (
-  <section className="bg-gray-100 flex flex-col items-center py-12 relative">
+  <section className="bg-cream flex flex-col items-center py-12 relative">
     {crenulations}
     <Title prefix="Watch a sneakpeek of" title="Our Love Story" />
-    <div className="text-black text-center text-sm mb-5 px-8">
-      <q>{config.quote}</q>
+    <div 
+      className='absolute inset-8 flex justify-between'>
+      <div className='relative h-full w-24'>
+        <Image fill src={pillar} alt='Pillar' placeholder='empty' className='object-contain' />
+      </div>
+      <div className='relative h-full w-24'>
+        <Image fill src={pillar} alt='Pillar' placeholder='empty' className='object-contain' />
+      </div>
     </div>
     <VideoPlayer />
+    <div className="text-black text-center text-sm mt-5 px-8 z-10">
+      <q>{config.quote}</q>
+    </div>
   </section>
 );
 
@@ -115,7 +125,7 @@ const section5 = (
 );
 
 const section6 = (
-  <section className="bg-gray-100 flex flex-col items-center py-12 relative">
+  <section className="bg-cream flex flex-col items-center py-12 relative">
     {crenulations}
     <Title prefix="Here are the details of" title="Our Wedding Event" />
     <div className="w-full px-5 md:w-9/12 md:flex items-center">
@@ -132,9 +142,9 @@ const section6 = (
         </div>
         <ul className="text-sm">
           <li>{config.wedding.address}</li>
-          <li><b className="text-red-500">Date:</b> {config.wedding.date}</li>
-          <li><b className="text-red-500">Time:</b> {config.wedding.time}</li>
-          <li><b className="text-red-500">Dress Code:</b> {config.wedding.dresscode}</li>
+          <li><b className="text-olive">Date:</b> {config.wedding.date}</li>
+          <li><b className="text-olive">Time:</b> {config.wedding.time}</li>
+          <li><b className="text-olive">Dress Code:</b> {config.wedding.dresscode}</li>
         </ul>
       </div>
     </div>
@@ -163,7 +173,7 @@ const section7 = (
 );
 
 const section8 = (
-  <section className="bg-gray-100 py-12 relative"> 
+  <section className="bg-cream py-12 relative"> 
     {crenulations}
     <Title prefix="Some of your heartfelt" title="Prayers and Wishes" />
     <div className="bg-white shadow-md h-96 w-11/12 sm:w-9/12 md:w-7/12 lg:w-6/12 mx-auto relative">
@@ -173,7 +183,7 @@ const section8 = (
 );
 
 const section9 = (
-  <section className="bg-gray-200 py-12">
+  <section className="bg-yellow-100 py-12">
     <Title prefix="Feeling extra generous?" title="Wedding Gift" />
     <Donations />
   </section>
@@ -194,7 +204,7 @@ const section10 = (
         WebkitBackdropFilter: "brightness(0.6) grayscale(0.2)" 
       }}>
       <div>Kindly tag our instagram on our wedding day:</div>
-      <a href={config.hashtag.url} className="underline">
+      <a href={config.hashtag.url} className="underline font-bold">
         {config.hashtag.text}
       </a>
       <div>Your presence and prayers will bring joy to us.</div>
@@ -204,7 +214,7 @@ const section10 = (
 );
 
 const section11 = (
-  <section className="bg-gray-100 flex flex-col items-center pt-12 pb-1">
+  <section className="bg-cream flex flex-col items-center pt-12 pb-1">
     <Title prefix="Take a look at" title="Our Gallery" />
     <Gallery />
   </section>

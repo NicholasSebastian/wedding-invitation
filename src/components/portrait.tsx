@@ -24,12 +24,12 @@ const Portrait: FC<PropsWithChildren<PortraitProps>> = props => {
         alt={alt}
         placeholder="blur"
         sizes="(max-width: 640px) 100vw, 50vw" />
-      <div className="absolute inset-3 border border-white" />
+      <div className="absolute inset-3 border" style={{ borderColor: "#FFD700" }} />
       <Image 
         src="/crenulations.svg" 
         alt="Crenulations"
         className="absolute top-1 right-1"
-        style={{ transform: "scale(-1)", filter: "invert(1)" }}
+        style={{ transform: "scale(-1)", filter: "invert(89%) sepia(20%) saturate(6577%) hue-rotate(1deg) brightness(105%) contrast(104%)" }}
         width={120}
         height={120} />
       <div className="absolute z-10 bottom-8 inset-x-0 text-center">

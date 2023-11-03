@@ -7,6 +7,22 @@
     font-family: 'Dancing Script', cursive;
 }
 
+.bg-cream {
+    background-color: #faebd7;
+}
+
+.bg-olive {
+    background-color: #aab597;
+}
+
+.text-cream {
+    color: #faebd7;
+}
+
+.text-olive {
+    color: #99a582;
+}
+
 @media (min-width: 768px) {
     .md-ml-negative {
         margin-left: -32px;

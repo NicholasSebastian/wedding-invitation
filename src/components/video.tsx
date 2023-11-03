@@ -21,7 +21,7 @@ const VideoPlayer: FC = () => {
   return (
     <video controls autoPlay muted loop playsInline 
       ref={videoRef}
-      className="w-11/12 sm:w-9/12 md:w-7/12 lg:w-6/12">
+      className="w-11/12 sm:w-9/12 md:w-7/12 lg:w-6/12 z-10">
       <source src='/video.mp4' type='video/mp4' />
     </video>
   );

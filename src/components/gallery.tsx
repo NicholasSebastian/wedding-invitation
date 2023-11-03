@@ -9,11 +9,18 @@ import photo7 from "../assets/portrait7.jpg";
 import photo8 from "../assets/portrait8.jpg";
 import photo9 from "../assets/portrait9.jpg";
 import photo10 from "../assets/portrait10.jpg";
+import photo11 from "../assets/portrait11.jpg";
+import photo12 from "../assets/portrait12.jpg";
+import photo13 from "../assets/portrait13.jpg";
+import photo14 from "../assets/portrait14.jpg";
+import photo15 from "../assets/portrait15.jpg";
 import type { FC } from "react";
 
 const images = [
-  photo1, photo2, photo3, photo4, photo5,
-  photo6, photo7, photo8, photo9, photo10
+  photo1, photo2, photo3, photo4, 
+  photo5, photo6, photo7, photo8, 
+  photo9, photo10, photo11, photo12,
+  photo13, photo14, photo15
 ];
 
 const Gallery: FC = () => {
