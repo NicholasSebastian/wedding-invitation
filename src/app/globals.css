@@ -4,27 +4,27 @@
 @tailwind utilities;
 
 .font-dance {
-    font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
-.bg-cream {
-    background-color: #faebd7;
+.bg-blush {
+  background-color: #de7894;
 }
 
 .bg-olive {
-    background-color: #aab597;
+  background-color: #aab597;
 }
 
 .text-cream {
-    color: #faebd7;
+  color: #faebd7;
 }
 
-.text-olive {
-    color: #99a582;
+.text-velvet {
+  color: #b35771;
 }
 
 @media (min-width: 768px) {
-    .md-ml-negative {
-        margin-left: -32px;
-    }
+  .md-ml-negative {
+    margin-left: -32px;
+  }
 }

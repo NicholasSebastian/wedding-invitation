@@ -20,7 +20,7 @@ const Count : FC<CountProps> = props => {
   return (
     <div className="flex flex-col items-center">
       <div className="border border-gray-700 rounded-full w-16 h-16 flex justify-center items-center">
-        <span className="text-olive text-2xl font-semibold">{value}</span>
+        <span className="text-velvet text-2xl font-semibold">{value}</span>
       </div>
       <div className="uppercase text-gray-700 text-xs mt-1">
         {label}
