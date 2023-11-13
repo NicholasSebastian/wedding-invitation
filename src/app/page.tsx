@@ -206,7 +206,7 @@ const section11 = (
 );
 
 const footer = (
-  <footer className="flex flex-col items-center py-6 text-center text-xs">
+  <footer className="flex flex-col items-center py-5 text-center text-xs">
     <a href={config.credits.instagram} rel="nofollow">Made by {config.credits.name}</a>
     <div>{config.credits.description}</div>
   </footer>

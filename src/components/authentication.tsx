@@ -6,7 +6,6 @@ import { BsEnvelopeOpenFill } from "@react-icons/all-files/bs/BsEnvelopeOpenFill
 import config from "@/app/config.json";
 import useRecipient from './recipient';
 import background from "../assets/landscape5.jpg";
-import frame from "../assets/frame.png";
 import type { FC, PropsWithChildren } from "react";
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
@@ -24,10 +23,15 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
         placeholder="blur"
         className="object-cover"
         style={{ objectPosition: '40% 50%', zIndex: -20 }} />
-      <Image fill
-        src={frame}
-        alt="Frame"
-        placeholder="empty"
+      <Image 
+        src="/crenulations.svg" 
+        alt="Crenulations"
+        className="absolute top-1 right-1"
+        style={{ transform: "scale(-1)", filter: "invert(1)" }}
+        width={160}
+        height={160} />
+      <div 
+        className="absolute inset-5 border border-white"
         style={{ zIndex: -10 }} />
       <div className="font-dance text-5xl sm:text-6xl text-center">
         {config.couple.fiance.name} & {config.couple.fiancee.name}

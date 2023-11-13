@@ -11,7 +11,7 @@ const Donations: FC = () => {
   return (
     <Fragment>
       <button 
-        className="block mx-auto bg-olive py-2 px-3 text-sm rounded"
+        className="block mx-auto bg-white py-2 px-3 text-sm text-velvet rounded"
         onClick={() => {
           setOpen(true);
           track("View Rekening");

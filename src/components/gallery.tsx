@@ -14,13 +14,15 @@ import photo12 from "../assets/portrait12.jpg";
 import photo13 from "../assets/portrait13.jpg";
 import photo14 from "../assets/portrait14.jpg";
 import photo15 from "../assets/portrait15.jpg";
+import photo16 from "../assets/portrait16.jpg";
+import photo17 from "../assets/portrait17.jpg";
+import photo18 from "../assets/portrait18.jpg";
 import type { FC } from "react";
 
 const images = [
-  photo1, photo2, photo3, photo4, 
-  photo5, photo6, photo7, photo8, 
-  photo9, photo10, photo11, photo12,
-  photo13, photo14, photo15
+  photo1, photo2, photo3, photo4, photo5, photo6, 
+  photo7, photo8, photo9, photo10, photo11, photo12,
+  photo13, photo14, photo15, photo16, photo17, photo18
 ];
 
 const Gallery: FC = () => {
