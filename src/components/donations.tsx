@@ -23,7 +23,7 @@ const Donations: FC = () => {
         <div className="text-center mt-4">
           <div className="text-gray-700">{config.bank.text}</div>
           <button 
-            className="text-velvet focus:outline-none focus:underline"
+            className="text-white focus:outline-none focus:underline"
             onClick={() => {
               navigator.clipboard.writeText(config.bank.number.toString());
               track("Copy Rekening");
